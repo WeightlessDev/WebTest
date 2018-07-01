@@ -129,11 +129,11 @@ function onLoad() {
     is_autopan_off: true
   });
 
-  vrView.on('ready', onVRViewReady);
-  vrView.on('modechange', onModeChange);
-  vrView.on('click', onHotspotClick);
-  vrView.on('error', onVRViewError);
-  vrView.on('getposition', onGetPosition);
+  //vrView.on('ready', onVRViewReady);
+  //vrView.on('modechange', onModeChange);
+  //vrView.on('click', onHotspotClick);
+  //vrView.on('error', onVRViewError);
+  //vrView.on('getposition', onGetPosition);
 }
 
 /*
