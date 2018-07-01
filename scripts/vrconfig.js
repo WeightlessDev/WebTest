@@ -14,6 +14,8 @@
  */
 var vrView;
 
+/*
+
 // All the scenes for the experience
 var scenes = {
   dolphins: {
@@ -114,6 +116,10 @@ var scenes = {
   }
 };
 
+*/
+
+
+
 function onLoad() {
   vrView = new VRView.Player('#vrview', {
     image: 'images/blank.png',
@@ -128,6 +134,8 @@ function onLoad() {
   vrView.on('error', onVRViewError);
   vrView.on('getposition', onGetPosition);
 }
+
+/*
 
 function onVRViewReady(e) {
   console.log('onVRViewReady');
@@ -181,5 +189,7 @@ function loadScene(id) {
 function onVRViewError(e) {
   console.log('Error! %s', e.message);
 }
+
+*/
 
 window.addEventListener('load', onLoad);
