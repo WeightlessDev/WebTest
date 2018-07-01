@@ -119,7 +119,7 @@ var scenes = {
 
 */
 
-
+var myImage = new Image(200, 200);
 
 function onLoad() {
   vrView = new VRView.Player('#vrview', {
@@ -128,6 +128,8 @@ function onLoad() {
     is_stereo: true,
     is_autopan_off: true
   });
+
+  myImage.src = 'images/SalaSmall.jpg';
 
   console.log('Console Message');
 
