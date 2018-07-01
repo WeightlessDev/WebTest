@@ -122,12 +122,12 @@ var scenes = {
 var myImage = new Image(200, 200);
 
 function onLoad() {
-  vrView = new VRView.Player('#vrview', {
-    image: 'images/blank.png',
-    preview: 'images/blank.png',
-    is_stereo: true,
-    is_autopan_off: true
-  });
+  // vrView = new VRView.Player('#vrview', {
+  //   image: 'images/blank.png',
+  //   preview: 'images/blank.png',
+  //   is_stereo: true,
+  //   is_autopan_off: true
+  // });
 
   myImage.src = 'images/SalaSmall.jpg';
 
