@@ -130,6 +130,7 @@ function onLoad() {
   // });
 
   myImage.src = 'images/SalaSmall.jpg';
+  document.body.appendChild(myImage);
 
   console.log('Console Message');
 
