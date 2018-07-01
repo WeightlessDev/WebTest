@@ -15,7 +15,7 @@
 
 var vrView;
 
-/*
+
 
 // All the scenes for the experience
 var scenes = {
@@ -117,32 +117,29 @@ var scenes = {
   }
 };
 
-*/
 
-var myImage = new Image(200, 200);
+
+//var myImage = new Image(200, 200);
 
 function onLoad() {
   vrView = new VRView.Player('#vrview', {
     image: 'images/blank.png'
-  //   preview: 'images/blank.png',
-  //   is_stereo: true,
-  //   is_autopan_off: true
+    preview: 'images/blank.png',
+    is_stereo: true,
+    is_autopan_off: true
   });
 
-  console.log('After Function');
+  console.log('Inside Function');  
 
 
-  
-
-
-  //vrView.on('ready', onVRViewReady);
-  //vrView.on('modechange', onModeChange);
-  //vrView.on('click', onHotspotClick);
-  //vrView.on('error', onVRViewError);
-  //vrView.on('getposition', onGetPosition);
+  vrView.on('ready', onVRViewReady);
+  vrView.on('modechange', onModeChange);
+  vrView.on('click', onHotspotClick);
+  vrView.on('error', onVRViewError);
+  vrView.on('getposition', onGetPosition);
 }
 
-/*
+
 
 function onVRViewReady(e) {
   console.log('onVRViewReady');
@@ -197,6 +194,6 @@ function onVRViewError(e) {
   console.log('Error! %s', e.message);
 }
 
-*/
+
 
 window.addEventListener('load', onLoad);
