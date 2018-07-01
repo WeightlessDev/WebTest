@@ -129,6 +129,9 @@ function onLoad() {
     is_autopan_off: true
   });
 
+  console.log('Console Message');
+
+
   //vrView.on('ready', onVRViewReady);
   //vrView.on('modechange', onModeChange);
   //vrView.on('click', onHotspotClick);
