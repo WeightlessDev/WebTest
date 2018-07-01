@@ -129,11 +129,14 @@ function onLoad() {
   //   is_autopan_off: true
   myImage.src = 'images/SalaSmall.jpg';
   document.body.appendChild(myImage);
+
+  console.log('Inside Function');
+
   });
 
 
 
-  console.log('Console Message');
+  
 
 
   //vrView.on('ready', onVRViewReady);
