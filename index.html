@@ -13,13 +13,21 @@
   
   <div id='vrview'></div>  
 
-  <iframe
-   frameborder="0"
-   width="100%"
-   scrolling="no"
-   allowfullscreen    
-   src="images/SalaSmall.jpg&is_stereo=false">
-</iframe>
+<script type="text/javascript">
+  
+window.addEventListener('load', onVrViewLoad);
+
+function onVrViewLoad() {
+  // Selector '#vrview' finds element with id 'vrview'.
+  var vrView = new VRView.Player('#vrview', {
+    //video: '/url/to/video.mp4',
+    image: '/images/SalaSmall.jpg',
+    is_stereo: false
+  });
+}
+
+
+</script>
 
 
 
