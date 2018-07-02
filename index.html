@@ -15,6 +15,21 @@
 
 <img src="images/SalaSmall.jpg">
 
+<script type="text/javascript">
+
+  window.addEventListener('load', onVrViewLoad);
+
+  function onVrViewLoad() {
+  // Selector '#vrview' finds element with id 'vrview'.
+    var vrView = new VRView.Player('#vrview', {
+    image: 'images/SalaSmall.jpg',
+    is_stereo: true
+  });
+}
+
+
+</script>
+
 
 
   <!-- <script src="scripts/vrconfig.js"></script> -->
