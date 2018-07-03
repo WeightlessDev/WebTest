@@ -20,6 +20,19 @@
       });
   </script>
 
+
+  <script type="text/javascript">
+      jQuery(window).resize(function($){
+        // Get the height of our player container
+        var container_height = $(window).height() - 100;
+        
+        // Set target DIVs height to player container height
+        $(".player").height(container_height);
+      });
+  </script>
+
+
+
   <div class = "player">
     <iframe src="https://vistasdemasferrer.bienesraices.me/" height="100%" width="100%"></iframe>  
   </div> 
