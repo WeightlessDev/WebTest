@@ -11,7 +11,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
   <script type="text/javascript">
-      jQuery(document).ready(function($){
+      jQuery(document).ready(function($)
+      {
         // Get the height of our player container
         var container_height = $(window).height() - 100;
         
@@ -21,14 +22,16 @@
   </script>
 
 
+
   <script type="text/javascript">
-      jQuery(window).resize(function($){
-        // Get the height of our player container
+    $( window ).on( "orientationchange", function($) 
+    {
+      // Get the height of our player container
         var container_height = $(window).height() - 100;
         
         // Set target DIVs height to player container height
         $(".player").height(container_height);
-      });
+    });
   </script>
 
 
