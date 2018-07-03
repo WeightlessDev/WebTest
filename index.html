@@ -26,16 +26,11 @@
 
   <script type="text/javascript">
     
-    function OnWindowChange ()
+    $(window).resize(function()
     {
-      // Get the height of our player container
-        var container_height = $(window).height() - 100;
-        
-        // Set target DIVs height to player container height
-        $(".player").height(container_height);
-    }
-
-    window.addEventListener('windowChange', OnWindowChange);
+      var container_height = $(window).height() - 100;
+      $(".player").height(container_height);
+    });
 
   </script>
 
