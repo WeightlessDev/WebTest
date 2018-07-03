@@ -29,9 +29,20 @@
     switch(window.orientation) {  
       case -90 || 90:
         alert('landscape');
+        // Get the height of our player container
+        var container_height = $(window).height() - 100;
+        
+        // Set target DIVs height to player container height
+        $(".player").height(container_height);
+
         break; 
       default:
         alert('portrait');
+        // Get the height of our player container
+        var container_height = $(window).height() - 100;
+        
+        // Set target DIVs height to player container height
+        $(".player").height(container_height);
         break; 
     }
 }
